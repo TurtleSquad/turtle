@@ -464,6 +464,12 @@ th {
 }
 
 /*===== Base Styles =====*/
+.message-text {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid black;
+}
+
 input:not(#message-text) {
   display: block;
 }
@@ -528,7 +534,7 @@ nav li {
 }
 
 .message-box {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin: 0;
 }
 
