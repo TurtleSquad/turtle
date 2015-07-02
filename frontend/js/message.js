@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function () {
   // post on the message
   $.ajax({
     type: 'GET',
