@@ -11,6 +11,11 @@ $(document).ready(function(){
       alert('Their is no one that name.');
     }
   });
+  $('#logOut').on('click', function(){
+    localStorage.clear();
+    window.location.href = "index.html";
+  });
+
   setInterval(function() {
     $.ajax({
       type: 'GET',

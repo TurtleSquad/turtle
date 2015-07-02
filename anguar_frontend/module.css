@@ -53,7 +53,7 @@ ul{
 .aside__Rooms{
 
 }
-
+img { cursor: pointer; cursor: hand; }
 li:hover{
   background: rgb(106, 220, 9);
 }
