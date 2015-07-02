@@ -195,7 +195,7 @@ input[type=checkbox] {
    left: -9999px;
 }
 
-input[type=checkbox]:checked ~ div
+/*input[type=checkbox]:checked ~ div*/
 
 form:not(.message-text) {
   max-width: 50%;
@@ -203,8 +203,9 @@ form:not(.message-text) {
   margin-right: auto;
 }
 
-article {
+article, aside {
   background-color: #FFF68F;
+  border-radius: .5em;
   position: relative;
 }
 
@@ -223,18 +224,8 @@ nav li {
   display-list-style: none;
 }
 
-.display-block li{
-  display: block;
-}
-
-.message-box {
-  margin-top: 118px;
-  border: 1px solid black;
-  /*margin: 0;*/
-}
-
 input[name='message-text'] {
-  width: 79.2%;
+  width: auto;
 }
 
 /* Layout */
@@ -262,13 +253,10 @@ input[name='message-text'] {
 body{
   /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
   background: url(../background.png) no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-}
-
-body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;

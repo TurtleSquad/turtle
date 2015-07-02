@@ -24,13 +24,6 @@ ul {
   justify-content: flex-end;
 }
 
-li:hover{
-  background: rgb(106, 220, 9);
-}
-article{
-  border-radius: 5px;
-}
-
 button {
   vertical-align: bottom;
 }
@@ -46,16 +39,6 @@ button {
 }
 
 /*===== IDs =====*/
-#send {
-  width:13%;
-  margin: 0;
-}
-
-#emoticon {
-  width: 5%;
-  margin: 0;
-}
-
 #create_room {
   display: block;
   width: 100%;
@@ -99,7 +82,7 @@ button {
 
 /*=====Media Queries for Desktop=====*/
 /* Hidden Chat Room Feature */
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 500px) {
   .flexbox-container {
     flex-direction: row;
   }
@@ -113,10 +96,15 @@ button {
 
   .message-box {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: .5em;
+    left: .5em;
+    right: .5em;
     width: 100%;
+  }
+
+  #message-text {
+    width: 80%;
+    overflow: hidden;
   }
 
   .hamburger-hide {
@@ -144,7 +132,7 @@ button {
 }
 
 /*Mobile display*/
-@media(min-width:400px) {
+@media(min-width:1px) {
 
 /*slide menu*/
   li{
@@ -168,4 +156,34 @@ button {
   li:nth-child(4n){
     background: linear-gradient(to left,rgb(242, 146, 56),rgba(242,116,5,.8));
   }
+}
+
+li:hover{
+  background: rgb(106, 220, 9);
+}
+
+.display-block li{
+  display: block;
+}
+
+.message-box {
+  /*margin-top: 118px;*/
+}
+
+/* Check for duplicates */
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+/* Default State */
+
+/* Toggled State */
+input[type=checkbox]:checked ~ aside {
+  display: block;
+  top: 0;
+  left: 0;
 }
