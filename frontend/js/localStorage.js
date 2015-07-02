@@ -51,6 +51,7 @@ $(document).ready(function () {
   function saveToken(data) {
     var token = data.token;
     window.localStorage.setItem("login_token", token);
+    window.location.href = "chat.html";
   }
 });
 
