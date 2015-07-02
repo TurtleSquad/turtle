@@ -203,8 +203,9 @@ form:not(.message-text) {
   margin-right: auto;
 }
 
-article {
+article, aside {
   background-color: #FFF68F;
+  border-radius: 5px;
   position: relative;
 }
 
@@ -234,7 +235,7 @@ nav li {
 }
 
 input[name='message-text'] {
-  width: 79.2%;
+  width: auto;
 }
 
 /* Layout */

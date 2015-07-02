@@ -27,9 +27,6 @@ ul {
 li:hover{
   background: rgb(106, 220, 9);
 }
-article{
-  border-radius: 5px;
-}
 
 button {
   vertical-align: bottom;
@@ -46,16 +43,6 @@ button {
 }
 
 /*===== IDs =====*/
-#send {
-  width:13%;
-  margin: 0;
-}
-
-#emoticon {
-  width: 5%;
-  margin: 0;
-}
-
 #create_room {
   display: block;
   width: 100%;
@@ -99,7 +86,7 @@ button {
 
 /*=====Media Queries for Desktop=====*/
 /* Hidden Chat Room Feature */
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 500px) {
   .flexbox-container {
     flex-direction: row;
   }
@@ -117,6 +104,11 @@ button {
     left: 0;
     right: 0;
     width: 100%;
+  }
+
+  #message-text {
+    /*width: auto;*/
+    overflow: hidden;
   }
 
   .hamburger-hide {
