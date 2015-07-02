@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  //make sure user is logged in
+  if (!window.localStorage.login_token) {
+    window.location.href = "index.html";
+  }
+
+  //set ajax headers
+  $.ajaxSetup({
+    headers: { 'eat': window.localStorage.login_token }
+  });
+
   // post on the message
   $.ajax({
     type: 'GET',
@@ -36,11 +46,11 @@ $(document).ready(function () {
       console.log(newthread);
     }
   });
-
+});
 
 $("li").click(function() {
   alert( "Handler for .click() called." );
   // if (this.class == thread.roomID) {
     // $( "div" ).show();
-  }
+  // }
 });
