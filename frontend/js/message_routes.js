@@ -9,8 +9,6 @@ $(document).ready(function () {
     headers: { 'eat': window.localStorage.login_token }
   });
 
-  var apiURL = 'https://warm-escarpment-7619.herokuapp.com';
-
   $("#create_room").click(function(e) {
     e.preventDefault();
     var room = prompt("Name of Room");
@@ -64,7 +62,7 @@ $(document).ready(function () {
   function getAll() {
     $.ajax({
       type: 'GET',
-      url: apiURL + '/api/threads',
+      url: '/api/threads',
       success: function(data) {
         clearThreads();
         clearMessages();
@@ -90,7 +88,7 @@ $(document).ready(function () {
   function newThread(thread) {
     $.ajax({
       type: 'POST',
-      url: apiURL + '/api/threads',
+      url: '/api/threads',
       contentType: 'application/json',
       data: JSON.stringify(thread),
       success: function(data) {
@@ -107,7 +105,7 @@ $(document).ready(function () {
   function newMessage(message) {
     $.ajax({
       type: 'POST',
-      url: apiURL + '/api/message',
+      url: '/api/message',
       contentType: 'application/json',
       data: JSON.stringify(message),
       success: function(data) {
