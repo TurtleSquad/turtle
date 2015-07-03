@@ -77,10 +77,9 @@ module.exports = function (router) {
     var newMessage = new Message({
       threadName: req.body.threadName,
       authorName: req.user.basic.username,
-      text: req.body.message,
-      timeStamp: req.body.timeStamp
+      text: req.body.message
     });
-    newMessage.save(function(err, user) {
+    newMessage.save(function(err, message) {
       if(err) {
         console.log(err);
         return res.status(500).json({
@@ -90,7 +89,8 @@ module.exports = function (router) {
       }
       res.json({
         'success': true,
-        'msg': 'message saved'
+        'msg': 'message saved',
+        'message': message
       });
     });
   });
