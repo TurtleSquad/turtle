@@ -1,5 +1,7 @@
-$('.room-list li').click(function() {
-    var i = $(this).index();
+$('.room-list').on('click', 'li', function() {
+    var roomName = $(this).data('roomname');
     $('.items').hide();
-    $('#item' + (i+1)).show();
+    $('#' + roomName).show();
+    $('.room-list li').removeClass('active');
+    $(this).addClass('active');
 });
