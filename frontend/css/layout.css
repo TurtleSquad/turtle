@@ -1,0 +1,46 @@
+/*===== Mobile Layout =====*/
+
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flexbox-aside {
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  display: none;
+}
+
+.flexbox-article {
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/*===== Desktop Layout =====*/
+
+@media screen and (min-width: 500px) {
+  .flexbox-container {
+    flex-direction: row;
+  }
+
+  .flexbox-aside {
+    width: 33%;
+    padding: 10px;
+    display: block;
+  }
+
+   .flexbox-article {
+    width: 66%;
+    padding: 10px;
+  }
+}
+
+/*.nav-list li {
+  display: inline-block;
+  display-list-style: none;
+}*/

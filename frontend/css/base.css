@@ -189,14 +189,6 @@ input:not(#message-text) {
   display: block;
 }
 
-input[type=checkbox] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
-}
-
-/*input[type=checkbox]:checked ~ div*/
-
 form:not(.message-text) {
   max-width: 50%;
   margin-left: auto;
@@ -226,28 +218,6 @@ nav li {
 
 input[name='message-text'] {
   width: auto;
-}
-
-/* Layout */
-
-.flexbox-container {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.flexbox-container > article {
-  width: 66%;
-  padding: 10px;
-}
-
-.flexbox-container > aside {
-  width: 33%;
-  padding: 10px;
-}
-
-.flexbox-container > article:first-child {
-  margin-right: 20px;
 }
 
 body{

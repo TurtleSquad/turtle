@@ -34,6 +34,10 @@ button {
   margin-left: auto;
 }
 
+.box-padding {
+  padding: 1em;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -45,26 +49,6 @@ button {
 }
 
 /*===== Mobile-First Styles =====*/
-
-.flexbox-container {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-}
-
-.flexbox-container > article {
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-}
-
-.flexbox-container > aside {
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-  display: none;
-}
 
 .message-box {
   position: absolute;
