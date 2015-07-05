@@ -5,10 +5,10 @@ h1{
 }
 
 /*===== Emoji Icons =====*/
-.hidden{
+.hidden {
   display: none;
 }
-.emjoi_list{
+.emjoi_list {
   width: 30%;
   display: absolute;
 }
@@ -38,7 +38,13 @@ button {
   padding: 1em;
 }
 
-.pointer {
+.box-skin {
+
+}
+
+.button {
+  border: 1px solid green;
+  background: none;
   cursor: pointer;
 }
 
@@ -95,7 +101,7 @@ button {
     display: none;
   }
 
-  .flexbox-container > article {
+  /*.flexbox-container > article {
     width: 66%;
     padding: 10px;
   }
@@ -108,7 +114,7 @@ button {
 
   .flexbox-container > article:first-child {
     margin-right: 20px;
-  }
+  }*/
 
   .copyright {
     padding: .5em;
@@ -148,26 +154,4 @@ li:hover{
 
 .display-block li{
   display: block;
-}
-
-.message-box {
-  /*margin-top: 118px;*/
-}
-
-/* Check for duplicates */
-input[type=checkbox] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
-   /* For mobile, it's typically better to position checkbox on top of clickable
-      area and turn opacity to 0 instead. */
-}
-
-/* Default State */
-
-/* Toggled State */
-input[type=checkbox]:checked ~ aside {
-  display: block;
-  top: 0;
-  left: 0;
 }

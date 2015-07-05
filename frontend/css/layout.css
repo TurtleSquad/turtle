@@ -34,13 +34,85 @@
     display: block;
   }
 
-   .flexbox-article {
+  .flexbox-article {
     width: 66%;
     padding: 10px;
   }
 }
 
-/*.nav-list li {
+.nav-list li {
   display: inline-block;
   display-list-style: none;
-}*/
+  margin: 0px;
+}
+
+.button {
+  border: 1px solid green;
+  padding: .5em 2em;
+  background: none;
+  cursor: pointer;
+}
+
+/*===== Add this to CSS reset =====*/
+ul { margin: 0; padding: 0; }
+
+/*===== =====*/
+.flip-container {
+  padding: 1em;
+ /* text-align: center;*/
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-perspective: 80em;
+  perspective: 80em;
+}
+
+.shell {
+  width: 25em;
+  height: 25em;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 25em;
+  height: 25em;
+  backface-visibility: hidden;
+}
+
+.front {
+  /*border: .1em solid #16a085;*/
+  /*border-radius: .4em;
+  background-color: #EBE8E4;
+  background-position: center;*/
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  z-index: 2;
+}
+
+.back {
+  z-index: 1;
+/*  background-color: #16a085;
+  border-radius: .4em;*/
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  /*color: white;*/
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.shell.active {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/*=====  =====*/
+input:not(#message-text) {
+  display: block;
+}

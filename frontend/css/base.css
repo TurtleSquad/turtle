@@ -228,6 +228,5 @@ body{
   -o-background-size: cover;
   background-size: cover;
   max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }

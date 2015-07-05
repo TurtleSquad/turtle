@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Take Ur Turtle Like Everywhere: a simple social media platform focused on privacy!">
     <title>Turtle</title>
-    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="icon" href="favicon.ico"> -->
     <!-- <link rel="stylesheet" href="css/base.css"> -->
     <!-- <link rel="stylesheet" href="css/module.css"> -->
     <link rel="stylesheet" href="css/layout.css">
@@ -14,9 +14,10 @@
   <body>
 
     <header role="banner">
-      <nav role="navigation" class="flexbox-container">
-        <button>Test</button>
-        <button>Hamburger</button><!-- <ul class="nav-list"> -->
+      <nav role="navigation">
+        <ul class="nav-list flexbox-container">
+          <li><button class="button">Test</button></li>
+        <li><button class="button">Hamburger</button></li><!-- <ul class="nav-list"> -->
           <!-- <li class="hamburger-hide">
             <label for="hamburger" class="pointer">
               <i class="icon-menu"></i>
@@ -24,8 +25,8 @@
             <input type="checkbox" id="hamburger">
           </li> -->
           <!-- <li>Whaddup Turtle?</li> -->
-          <!-- <li> --><button id='logOut'>Log Out</button><!-- </li> -->
-        <!-- </ul> -->
+          <!-- <li> --><li><button id="logOut" class="button">Log Out</button></li><!-- </li> -->
+        <!-- </ul> --></ul>
       </nav>
     </header>
 
@@ -35,7 +36,7 @@
           <nav role="navigation">
             <ul class="display-block room-list">
             </ul>
-            <button id="create_room" class="center-element">Create New Chat Room</button>
+            <button id="create_room" class="button center-element">Create New Chat Room</button>
           </nav>
       </aside>
       <article id="chat-box" class="chat-box flexbox-article">
