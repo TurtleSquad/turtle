@@ -203,48 +203,39 @@ fieldset {
 }
 
 form {
-  background-color: white;
   border-radius: .30em;
-}
-
-/*form:not(.message-text) {
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-article, aside {
-  background-color: #FFF68F;
-  border-radius: .5em;
-  position: relative;
-}
-
-fieldset {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 footer:not(.message-box) {
   text-align: center;
-}*/
-
-/*nav li {
-  display: inline-block;
-  display-list-style: none;
 }
 
 input[name='message-text'] {
   width: auto;
-}*/
-
-body{
-  /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
-  /*background: url(../background.png) no-repeat center center fixed;*/
+}
+/*
+body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   max-width: 968px;
   margin: 0 auto;
+}
+*/
+h1{
+  padding: 10px;
+  margin: 0;
+}
+
+body{
+  /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
 }

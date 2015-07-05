@@ -1,15 +1,28 @@
-h1{
-  border: 1px solid black;
-  padding: 10px;
-  margin: 0;
-}
-
 .nav-list li {
   display: inline-block;
   display-list-style: none;
   margin: 0;
 }
 
+.message-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright {
+  display: none;
+}
+
+.chat-footer {
+  height: 155px
+}
+
+.box-skin {
+  background-color: #FFF68F;
+  border-radius: .5em;
+  position: relative;
+}
 
 /*===== Emoji Icons =====*/
 .hidden {
@@ -18,18 +31,6 @@ h1{
 .emjoi_list {
   width: 30%;
   display: absolute;
-}
-
-/*===== Desktop Users =====*/
-
-.nav__Button{
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-button {
-  vertical-align: bottom;
 }
 
 /*===== Utilities =====*/
@@ -47,37 +48,30 @@ button {
   padding: 1em;
 }
 
+.chat-body {
+  /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
+  background: url(../images/background.png) no-repeat center center fixed;
+}
+
 /*===== Buttons =====*/
 
 .button {
   border: .1em solid green;
   padding: .5em 2em;
-  background: none;
   cursor: pointer;
 }
 
 /*===== IDs =====*/
+
 #create_room {
   display: block;
   width: 100%;
 }
 
-/*===== Mobile-First Styles =====*/
-
-.message-box {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.copyright {
-  display: none;
-}
-
 /*=====Media Queries for Desktop=====*/
 /* Hidden Chat Room Feature */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 50em) {
   .items {
     width: 61%;
     margin-right: 2%;
@@ -99,11 +93,8 @@ button {
   }
 }
 
-/*Mobile display*/
-@media(min-width:1px) {
-
 /*slide menu*/
-  li{
+  .room-list li{
     padding: 10px;
     margin-bottom: 5px;
     -moz-border-radius-topright: 5px;
@@ -124,7 +115,6 @@ button {
   li:nth-child(4n){
     background: linear-gradient(to left,rgb(242, 146, 56),rgba(242,116,5,.8));
   }
-}
 
 li:hover{
   background: rgb(106, 220, 9);
