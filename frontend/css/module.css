@@ -10,12 +10,14 @@
   width: 100%;
 }
 
-.copyright {
-  display: none;
+.static-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.chat-footer {
-  height: 155px
+.copyright {
+  display: none;
 }
 
 .box-skin {
@@ -39,6 +41,10 @@
   margin-left: auto;
 }
 
+.white-background {
+  background-color: white;
+}
+
 .center-text {
   text-align: center;
   border: none;
@@ -58,6 +64,7 @@
 .button {
   border: .1em solid green;
   padding: .5em 2em;
+  display: block;
   cursor: pointer;
 }
 
@@ -65,7 +72,7 @@
 
 #create_room {
   display: block;
-  width: 100%;
+  width: 15em;
 }
 
 /*=====Media Queries for Desktop=====*/
@@ -122,6 +129,10 @@ li:hover{
 
 .display-block li{
   display: block;
+}
+
+#chat-box {
+  height: 350px;
 }
 
 /*===== Flip Container =====*/

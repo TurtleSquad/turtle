@@ -228,9 +228,13 @@ h1{
   margin: 0;
 }
 
+html, body {
+  height:100%;
+}
+
 body{
   /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
-  background: url(../images/background.png) no-repeat center center fixed;
+  /*background: url(../images/background.png) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
