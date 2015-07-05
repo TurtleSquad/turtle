@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $(".emjoi").on('click',function(){
-    $("div").toggleClass('hidden');
+    $("#emjoi-container").toggleClass('hidden');
   });
 
   $("#whoChat").on('click',function(){
