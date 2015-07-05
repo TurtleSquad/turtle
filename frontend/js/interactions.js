@@ -4,8 +4,8 @@ $(document).ready(function(){
   });
   //show on text box
   $('.face').on('click', function(){
-    var image = $(this).attr('id');
-    var iconShow = $('#message-text').val(image);
+    var image = $(this).attr('src');
+    iconShow = $('#message-text').val(image);
   });
   // $("#create_room").on('click',function(){
   //   var room = prompt('Name of Room ?');
