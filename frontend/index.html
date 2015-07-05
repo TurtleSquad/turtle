@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Take Ur Turtle Like Everywhere: a simple social media platform focused on privacy!">
     <title>Turtle</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/layout.css">
   </head>
 
   <body>
 
     <header role="banner">
       <nav role="navigation">
-        <h1>Whaddup Turtle?</h1>
+        <h1 class="center-text">Turtle Chat</h1>
       </nav>
     </header>
 
@@ -21,7 +22,7 @@
       <article id="flip-container">
         <section class="shell">
           <section class="face front">
-            <form role="form">
+            <form role="form" class="white-background">
               <fieldset>
                 <legend>Login</legend>
                 <label for="name">Username:</label>
@@ -29,13 +30,13 @@
                 <label for="password">Password:</label>
                 <input aria-label="Password" name="password" id="password" type="password" value="" placeholder="Enter your password" required>
                 <button id="login">Login</button>
-                <button id="new_user">Create New User</button>
+                <button id="new_user" type="button">Create New User</button>
               </fieldset>
             </form>
           </section>
 
           <section class="face back">
-            <form role="form">
+            <form role="form" class="white-background">
               <fieldset>
                 <legend>Create New User</legend>
                 <label for="new_username">Username:</label>
@@ -45,6 +46,7 @@
                 <label for="email">Email:</label>
                 <input aria-label="Email" name="new_email" id="new_email" class="stored" type="email" value="" placeholder="example@example.com" required>
                 <button id="create_new">Sign Up</button>
+                <button id="back" type="button">Back</button>
               </fieldset>
             </form>
           </section>
@@ -59,6 +61,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/localStorage.js"></script>
     <script type="text/javascript" src="js/login_routes.js"></script>
+    <script type="text/javascript" src="js/flip_test.js"></script>
 
   </body>
 </html>
