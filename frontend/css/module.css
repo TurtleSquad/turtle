@@ -1,89 +1,16 @@
-h1{
-  border: 1px solid black;
-  padding: 10px;
+.nav-list li {
+  display: inline-block;
+  display-list-style: none;
   margin: 0;
-}
-
-/*===== Emoji Icons =====*/
-.hidden{
-  display: none;
-}
-.emjoi_list{
-  width: 30%;
-  display: absolute;
-}
-
-/*===== Desktop Users =====*/
-ul {
-  padding: 0;
-}
-
-.nav__Button{
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-li:hover{
-  background: rgb(106, 220, 9);
-}
-article{
-  border-radius: 5px;
-}
-
-button {
-  vertical-align: bottom;
-}
-
-/*===== Utilities =====*/
-.center-element {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-/*===== IDs =====*/
-#send {
-  width:13%;
-  margin: 0;
-}
-
-#emoticon {
-  width: 5%;
-  margin: 0;
-}
-
-#create_room {
-  display: block;
-  width: 100%;
-}
-
-/*===== Mobile-First Styles =====*/
-
-.flexbox-container {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-}
-
-.flexbox-container > article {
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-}
-
-.flexbox-container > aside {
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-  display: none;
 }
 
 .message-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.static-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -93,17 +20,65 @@ button {
   display: none;
 }
 
-.hamburger-hide {
-  display: inline-block;
+.box-skin {
+  background-color: #FFF68F;
+  border-radius: .5em;
+  position: relative;
+}
+
+/*===== Emoji Icons =====*/
+.hidden {
+  display: none;
+}
+.emjoi_list {
+  width: 30%;
+  display: absolute;
+}
+
+/*===== Utilities =====*/
+.center-element {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.center-text {
+  text-align: center;
+  border: none;
+}
+
+.box-padding {
+  padding: 1em;
+}
+
+.chat-body {
+  /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
+  background: url(../images/background.png) no-repeat center center fixed;
+}
+
+/*===== Buttons =====*/
+
+.button {
+  border: .1em solid green;
+  padding: .5em 2em;
+  display: block;
+  cursor: pointer;
+}
+
+/*===== IDs =====*/
+
+#create_room {
+  display: block;
+  width: 15em;
 }
 
 /*=====Media Queries for Desktop=====*/
 /* Hidden Chat Room Feature */
-@media screen and (min-width: 450px) {
-  .flexbox-container {
-    flex-direction: row;
-  }
 
+@media screen and (min-width: 50em) {
   .items {
     width: 61%;
     margin-right: 2%;
@@ -113,41 +88,20 @@ button {
 
   .message-box {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: .5em;
+    left: .5em;
+    right: .5em;
     width: 100%;
   }
 
-  .hamburger-hide {
-    display: none;
-  }
-
-  .flexbox-container > article {
-    width: 66%;
-    padding: 10px;
-  }
-
-  .flexbox-container > aside {
-    width: 33%;
-    padding: 10px;
-    display: block;
-  }
-
-  .flexbox-container > article:first-child {
-    margin-right: 20px;
-  }
-
-  .copyright {
-    padding: .5em;
+  #message-text {
+    width: 80%;
+    overflow: hidden;
   }
 }
 
-/*Mobile display*/
-@media(min-width:400px) {
-
 /*slide menu*/
-  li{
+  .room-list li{
     padding: 10px;
     margin-bottom: 5px;
     -moz-border-radius-topright: 5px;
@@ -168,4 +122,67 @@ button {
   li:nth-child(4n){
     background: linear-gradient(to left,rgb(242, 146, 56),rgba(242,116,5,.8));
   }
+
+li:hover{
+  background: rgb(106, 220, 9);
+}
+
+.display-block li{
+  display: block;
+}
+
+#chat-box {
+  height: 350px;
+}
+
+/*===== Flip Container =====*/
+.flip-container {
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-perspective: 80em;
+  perspective: 80em;
+}
+
+.shell {
+  width: 25em;
+  height: 25em;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 25em;
+  height: 25em;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url(../images/shell_front.jpg) no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  z-index: 2;
+}
+
+.back {
+  background: url(../images/shell_back.jpg) no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.shell.active {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }

@@ -11,41 +11,6 @@ $(document).ready(function () {
     }
   }
   init();
-
-  $('#login').click(login);
-  $('#create_new').click(create_new);
-
-  function login() {
-    name = $('#name').val();
-    password = $('#password').val();
-    $.ajax({
-      type: 'POST',
-      data: JSON.stringify(message),
-      contentType: 'application/json',
-      url: '/api/new_message',
-      success: function(newthread) {
-        console.log(newthread);
-      }
-    });
-  }
-
-  function create_new() {
-    var userData = {
-      username: $('#new_username').val(),
-      email: $('#new_email').val(),
-      password: $('#new_password').val()
-    };
-    $.ajax({
-      type: 'POST',
-      data: JSON.stringify(userData),
-      contentType: 'application/json',
-      url: '/api/create_new_user',
-      success: function(data) {
-        var token = data.token;
-        window.localStorage.setItem(token, data.token)
-      }
-    });
-  }
 });
 
 $('.stored').change(function () {
