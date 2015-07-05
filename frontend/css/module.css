@@ -4,6 +4,13 @@ h1{
   margin: 0;
 }
 
+.nav-list li {
+  display: inline-block;
+  display-list-style: none;
+  margin: 0;
+}
+
+
 /*===== Emoji Icons =====*/
 .hidden {
   display: none;
@@ -14,9 +21,6 @@ h1{
 }
 
 /*===== Desktop Users =====*/
-ul {
-  padding: 0;
-}
 
 .nav__Button{
   display:flex;
@@ -34,16 +38,20 @@ button {
   margin-left: auto;
 }
 
+.center-text {
+  text-align: center;
+  border: none;
+}
+
 .box-padding {
   padding: 1em;
 }
 
-.box-skin {
-
-}
+/*===== Buttons =====*/
 
 .button {
-  border: 1px solid green;
+  border: .1em solid green;
+  padding: .5em 2em;
   background: none;
   cursor: pointer;
 }
@@ -64,10 +72,6 @@ button {
 
 .copyright {
   display: none;
-}
-
-.hamburger-hide {
-  display: inline-block;
 }
 
 /*=====Media Queries for Desktop=====*/
@@ -100,21 +104,6 @@ button {
   .hamburger-hide {
     display: none;
   }
-
-  /*.flexbox-container > article {
-    width: 66%;
-    padding: 10px;
-  }
-
-  .flexbox-container > aside {
-    width: 33%;
-    padding: 10px;
-    display: block;
-  }
-
-  .flexbox-container > article:first-child {
-    margin-right: 20px;
-  }*/
 
   .copyright {
     padding: .5em;

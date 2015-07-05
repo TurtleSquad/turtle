@@ -17,7 +17,7 @@
 
 .flexbox-article {
   width: 100%;
-  padding: 0px;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -30,36 +30,19 @@
 
   .flexbox-aside {
     width: 33%;
-    padding: 10px;
+    padding: .10em;
     display: block;
   }
 
   .flexbox-article {
     width: 66%;
-    padding: 10px;
+    padding: .10em;
   }
 }
 
-.nav-list li {
-  display: inline-block;
-  display-list-style: none;
-  margin: 0px;
-}
-
-.button {
-  border: 1px solid green;
-  padding: .5em 2em;
-  background: none;
-  cursor: pointer;
-}
-
-/*===== Add this to CSS reset =====*/
-ul { margin: 0; padding: 0; }
-
-/*===== =====*/
+/*===== Flip Container =====*/
 .flip-container {
   padding: 1em;
- /* text-align: center;*/
   display: flex;
   flex-wrap: nowrap;
   -webkit-perspective: 80em;
@@ -85,10 +68,8 @@ ul { margin: 0; padding: 0; }
 }
 
 .front {
-  /*border: .1em solid #16a085;*/
-  /*border-radius: .4em;
-  background-color: #EBE8E4;
-  background-position: center;*/
+  background: url(../images/FTT_shellBLACK2.jpg) no-repeat center;
+  background-size: contain;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
@@ -96,13 +77,12 @@ ul { margin: 0; padding: 0; }
 }
 
 .back {
-  z-index: 1;
-/*  background-color: #16a085;
-  border-radius: .4em;*/
+  background: url(../images/FTT_shellBLACK2.jpg) no-repeat center;
+  background-size: contain;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
-  /*color: white;*/
+  z-index: 1;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -112,7 +92,19 @@ ul { margin: 0; padding: 0; }
   transform: rotateY(180deg);
 }
 
-/*=====  =====*/
-input:not(#message-text) {
-  display: block;
+/*===== Checkbox Hack Test =====*/
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+/* Default State */
+
+/* Toggled State */
+input[type=checkbox]:checked ~ #room-box {
+   display: none;
 }
