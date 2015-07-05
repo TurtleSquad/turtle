@@ -42,7 +42,12 @@
       <article id="chat-box" class="chat-box flexbox-article box-skin">
         <h1>Chat</h1>
         <div id="section_container"></div>
-        <div class="hidden emjoi_list">
+        <footer class="message-box">
+          <form role="form" class="message-text">
+            <button id="emoticon" class="emjoi">:)</button>
+            <input aria-label="Message Text" name="message-text" id="message-text" type="text" value="" placeholder="Enter your message" required>
+            <button id="send">Send</button>
+            <div class="hidden emjoi_list">
               <span><a><img src="emjoi/anger6.png"></span>
               <span><img src="emjoi/annulled3.png"></span>
               <span><img src="emjoi/bad5.png"></span>
@@ -69,21 +74,16 @@
               <span><img src="emjoi/surprised19.png"></span>
               <span><img src="emjoi/sweating3.png"></span>
             </div>
-        <footer class="message-box">
-          <form role="form" class="message-text">
-            <button id="emoticon" class="emjoi">:)</button>
-            <input aria-label="Message Text" name="message-text" id="message-text" type="text" value="" placeholder="Enter your message" required>
-            <button id="send">Send</button>
           </form>
         </footer>
       </article>
     </main>
 
-   <!--  <footer role="contentinfo" class="chat-footer" >
+   <!--<footer role="contentinfo" class="chat-footer" >
       <p>© Copyright 2015 Turtle</p>
     </footer> -->
 
-    <script type="text/javascript" src="js/interactions.js"></script>
+    <!--<script type="text/javascript" src="js/interactions.js"></script>
     <script type="text/javascript" src="js/message_routes.js"></script>
     <script type="text/javascript" src="js/room_popup.js"></script>-->
 
