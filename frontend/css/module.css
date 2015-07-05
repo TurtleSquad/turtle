@@ -76,11 +76,8 @@ button {
 
 /*=====Media Queries for Desktop=====*/
 /* Hidden Chat Room Feature */
-@media screen and (min-width: 500px) {
-  .flexbox-container {
-    flex-direction: row;
-  }
 
+@media screen and (min-width: 500px) {
   .items {
     width: 61%;
     margin-right: 2%;
@@ -99,14 +96,6 @@ button {
   #message-text {
     width: 80%;
     overflow: hidden;
-  }
-
-  .hamburger-hide {
-    display: none;
-  }
-
-  .copyright {
-    padding: .5em;
   }
 }
 
@@ -143,4 +132,56 @@ li:hover{
 
 .display-block li{
   display: block;
+}
+
+/*===== Flip Container =====*/
+.flip-container {
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-perspective: 80em;
+  perspective: 80em;
+}
+
+.shell {
+  width: 25em;
+  height: 25em;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 25em;
+  height: 25em;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url(../images/shell_front.jpg) no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  z-index: 2;
+}
+
+.back {
+  background: url(../images/shell_back.jpg) no-repeat center;
+  background-size: contain;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.shell.active {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
