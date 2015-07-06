@@ -153,7 +153,11 @@
   background: linear-gradient(to left,rgb(242, 146, 56),rgba(242,116,5,.8));
 }
 
-li:hover{
+.room-list li:hover{
+  background: rgb(106, 220, 9);
+}
+
+#room-heading:hover {
   background: rgb(106, 220, 9);
 }
 
