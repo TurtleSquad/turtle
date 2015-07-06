@@ -52,8 +52,8 @@
   }
 }
 
-.white-text {
-  color: white;
+.tan-text {
+  color: #FFF68F;
 }
 
 .white-background {
@@ -96,7 +96,7 @@
 /*===== Media Queries for Desktop =====*/
 /* Hidden Chat Room Feature */
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 35em) {
   .items {
     width: 61%;
     margin-right: 2%;
