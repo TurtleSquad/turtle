@@ -5,6 +5,3 @@ $('#new_user').on('click', function() {
 $('#back').on('click', function() {
   $('.shell').toggleClass('active');
 });
-// $(':button').on('click', function() {
-//   $('.shell').toggleClass('active');
-// });

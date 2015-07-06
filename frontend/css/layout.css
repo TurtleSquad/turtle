@@ -10,7 +10,7 @@
 
 .flexbox-aside {
   width: 100%;
-  padding: 0px;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
 
 /*===== Desktop Layout =====*/
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 35em) {
   .flexbox-container {
     flex-direction: row;
   }
