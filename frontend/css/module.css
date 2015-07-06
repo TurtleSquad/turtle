@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 35em) {
   .expand-width {
     width: 100%;
   }
