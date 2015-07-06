@@ -42,6 +42,20 @@
   margin-left: auto;
 }
 
+.expand-width {
+  width: 100%;
+}
+
+@media screen and (min-width: 50em) {
+  .expand-width {
+    width: 100%;
+  }
+}
+
+.white-text {
+  color: white;
+}
+
 .white-background {
   background-color: white;
 }
