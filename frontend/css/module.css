@@ -128,7 +128,8 @@
 
 .room-list li{
   padding: 1em;
-  margin-bottom: .5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
   -moz-border-radius-topright: .5em;
   -moz-border-radius-bottomright: .5em;
   border-top-right-radius: .5em;
