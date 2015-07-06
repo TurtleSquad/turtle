@@ -3,6 +3,6 @@ $(function() {
 
   //Dom not ready code
   function collapse() {
-    $(".room-list").toggle();
+    $("#room").toggle();
   }
 });

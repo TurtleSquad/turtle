@@ -20,16 +20,17 @@
   display: none;
 }
 
+/*===== Emoji Icons =====*/
 .box-skin {
   background-color: #FFF68F;
   border-radius: .5em;
   position: relative;
 }
 
-/*===== Emoji Icons =====*/
 .hidden {
   display: none;
 }
+
 .emjoi_list {
   width: 30%;
   display: absolute;
@@ -45,6 +46,10 @@
   background-color: white;
 }
 
+.remove-background {
+  background: none;
+}
+
 .center-text {
   text-align: center;
   border: none;
@@ -55,12 +60,7 @@
 }
 
 .collapse {
-  display: none;
-}
-
-.chat-body {
-  /*Image source: http://i.imgur.com/EiSTk.png. We need to change this.*/
-  background: url(../images/background.png) no-repeat center center fixed;
+  display;
 }
 
 /*===== Buttons =====*/
@@ -79,7 +79,7 @@
   width: 15em;
 }
 
-/*=====Media Queries for Desktop=====*/
+/*===== Media Queries for Desktop =====*/
 /* Hidden Chat Room Feature */
 
 @media screen and (min-width: 50em) {
@@ -104,32 +104,33 @@
   }
 }
 
-/*slide menu*/
-  .room-list li{
-    padding: 10px;
-    margin-bottom: 5px;
-    -moz-border-radius-topright: 5px;
-    -moz-border-radius-bottomright: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-  }
+/*===== Room Menu =====*/
 
-  .room-list li:nth-child(even){
-    background: linear-gradient(to left,rgb(165, 106, 166),rgb(163, 61, 166));
-  }
+.room-list li{
+  padding: .10em;
+  margin-bottom: .5em;
+  -moz-border-radius-topright: .5em;
+  -moz-border-radius-bottomright: .5em;
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  border-top-left-radius: .5em;
+}
 
-  .room-list li:nth-child(odd){
-    background: linear-gradient(to left,rgba(217, 24, 40,.8),rgb(217, 56, 56));
-  }
+.room-list li:nth-child(even){
+  background: linear-gradient(to left,rgb(165, 106, 166),rgb(163, 61, 166));
+}
 
-  .room-list li:nth-child(3n){
-    background: linear-gradient(to left,rgba(136,187,254,.8),rgb(50, 137, 254));
-  }
+.room-list li:nth-child(odd){
+  background: linear-gradient(to left,rgba(217, 24, 40,.8),rgb(217, 56, 56));
+}
 
-  .room-list li:nth-child(4n){
-    background: linear-gradient(to left,rgb(242, 146, 56),rgba(242,116,5,.8));
-  }
+.room-list li:nth-child(3n){
+  background: linear-gradient(to left,rgba(136,187,254,.8),rgb(50, 137, 254));
+}
+
+.room-list li:nth-child(4n){
+  background: linear-gradient(to left,rgb(242, 146, 56),rgba(242,116,5,.8));
+}
 
 li:hover{
   background: rgb(106, 220, 9);
