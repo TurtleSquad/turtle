@@ -54,6 +54,7 @@
 
 .tan-text {
   color: #FFF68F;
+  border: none;
 }
 
 .white-background {
@@ -90,7 +91,7 @@
 
 #create_room {
   display: block;
-  width: 15em;
+  width: auto
 }
 
 /*===== Media Queries for Desktop =====*/
