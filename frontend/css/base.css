@@ -215,8 +215,9 @@ input[name='message-text'] {
 }
 
 h1{
-  padding: 10px;
+  padding: .1em;
   border: .1em solid green;
+  border-radius: .5em;
   margin: 0;
 }
 
