@@ -46,15 +46,20 @@
   width: 100%;
 }
 
+.tan-text {
+  color: #FFF68F;
+  border: none;
+  text-align: center;
+}
+
 @media screen and (min-width: 35em) {
   .expand-width {
     width: 100%;
   }
-}
 
-.tan-text {
-  color: #FFF68F;
-  border: none;
+  .tan-text {
+    text-align: left;
+  }
 }
 
 .white-background {
