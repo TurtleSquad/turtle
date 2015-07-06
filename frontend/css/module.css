@@ -107,7 +107,7 @@
 /*===== Room Menu =====*/
 
 .room-list li{
-  padding: .10em;
+  padding: 1em;
   margin-bottom: .5em;
   -moz-border-radius-topright: .5em;
   -moz-border-radius-bottomright: .5em;
